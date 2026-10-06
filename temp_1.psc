@@ -18,11 +18,15 @@ NOTA_MINIMA <- 61
 datosok <- (parcial1 >= 0) y (parcial1 <= 30)
 datosok <- datosok y (parcial2 >= 0) y (parcial2 <= 30)
 datosok <- datosok y (ExamenFinal >= 0) y (ExamenFinal <= 40)
-	Escribir "Datos validos: ", datosok
-//Calculos
-notaFinal <- parcial1 + parcial2 + ExamenFinal
-aprobado <- notaFinal >= NOTA_MINIMA
-//Resultados
-Escribir "nota final: ", notaFinal
-Escribir "Aprobado: ", aprobado
+Escribir "Datos validos: ", datosok
+Si datosok Entonces
+	//Calculos
+	notaFinal <- parcial1 + parcial2 + ExamenFinal
+	//Resultados
+	Escribir "nota final: ", notaFinal
+	Escribir "Aprobado: ", aprobado
+SiNo
+	Escribir "_Datos incorrectos intente de nuevo"
+FinSi
+	
 FinAlgoritmo
