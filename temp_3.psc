@@ -30,6 +30,16 @@ Funcion ResultadoResta <- Resta(n1, n2)
 	ResultadoResta <- n1 - n2 
 FinFuncion
 
+Funcion ResultadoMultiplicación <- Multiplicación(n1, n2, n3)
+	Definir ResultadoMultiplicación Como Entero
+	ResultadoMultiplicación <- n1 * n2 * n3
+FinFuncion
+
+Funcion ResultadoDivisión <- División(n1, n2)
+	Definir ResultadoDivisión Como Entero
+	ResultadoDivisión <- n1 / n2
+FinFuncion
+
 //Varcalculadora
 Algoritmo Calculadora
 	Definir opcionMenu Como Entero
@@ -53,8 +63,16 @@ Algoritmo Calculadora
 			MostrarResultado(resultado)
 		3:
 			Escribir "Esta es la opción Multiplicar"
+			Escribir "Ingrese tres números enteros"
+			Leer num1, num2, num3
+			resultado <- Multiplicación (num1, num2, num3)
+			MostrarResultado(resultado)
 		4:
-			Escribir "Esta es la opción division"
+			Escribir "Esta es la opción Division"
+			Escribir "Ingrese dos números enteros"
+			Leer num1, num2
+			resultado <- División (num1, num2)
+			MostrarResultado(resultado)
 		De Otro Modo:
 			Escribir "Opción invalida"
 	FinSegun
