@@ -43,11 +43,11 @@ big_icons=1
 check_for_updates=1
 last_update_check=0
 fixed_port=0
-history=C:\Users\jemer\Desktop\pseint\CicloParaMostrar.psc
-history=C:\Users\jemer\Desktop\pseint\CicloParaDimension.psc
-history=C:\Users\jemer\Desktop\pseint\CicloPara.psc
 history=C:\Users\jemer\Desktop\pseint\MenuNotas.psc
-history=C:\Users\jemer\Desktop\pseint\EvaluarEstudiante.psc
+history=C:\Users\jemer\Desktop\pseint\Calculadora.psc
+history=C:\Users\jemer\Desktop\pseint\DemoProcedimiento.psc
+history=C:\Users\jemer\Desktop\pseint\DemoFuncion.psc
+history=C:\Users\jemer\Desktop\pseint\CicloParaMostrar.psc
 
 profile=Flexible
 profile:source=list
