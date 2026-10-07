@@ -10,9 +10,9 @@ SubProceso MostrarMenu
 	Escribir "======Calculadora======="
 	Escribir "========================"
 	Escribir "[1] Suma"
-	Escribir "[1] Resta"
-	Escribir "[1] Multiplicación"
-	Escribir "[1] división"
+	Escribir "[2] Resta"
+	Escribir "[3] Multiplicación"
+	Escribir "[4] división"
 FinSubProceso
 
 SubProceso MostrarResultado(AlgunValor)
@@ -23,6 +23,11 @@ FinSubProceso
 Funcion ResultadoSuma <- Suma(n1, n2, n3, n4, n5)
 	Definir ResultadoSuma Como Entero
 	ResultadoSuma <- n1 + n2 + n3 + n4 + n5
+FinFuncion
+
+Funcion ResultadoResta <- Resta(n1, n2)
+	Definir ResultadoResta Como Entero
+	ResultadoResta <- n1 - n2 
 FinFuncion
 
 //Varcalculadora
@@ -42,6 +47,10 @@ Algoritmo Calculadora
 			MostrarResultado(resultado)
 		2:
 			Escribir "Esta es la opción Resta"
+			Escribir "Ingrese dos números enteros"
+			Leer num1, num2
+			resultado <- Resta (num1, num2)
+			MostrarResultado(resultado)
 		3:
 			Escribir "Esta es la opción Multiplicar"
 		4:
