@@ -1,15 +1,17 @@
-Algoritmo DescomponerTiempo
-	//variables
-	definir ENTRADA Como Entero
-	definir Horas Como Entero
-	definir Minutos Como Entero
-	//inicializacion
-	Escribir	"Coloque la entrada"
-	Leer ENTRADA
-	//factorizacion
-	Horas <- trunc (ENTRADA / 60)
-	Minutos <- ENTRADA mod 60
-	//Resultado
-	Escribir " 130 min equivale a: ", Horas, " h ", Minutos, " min"
+Funcion prom <- CalcularPromedio(n1, n2, n3)
+	Definir prom Como Real
+	prom <- (n1 + n2 + n3) / 3
+FinFuncion
+
+SubProceso MostrarResultado(promedio)
+	Escribir 	" El promedio es: ", promedio
+FinSubProceso
+
+Algoritmo DemoFuncion
+	Definir a, b, c, resultado Como Real
 	
+	Escribir  " tres notas: "
+	Leer a, b, c
+	resultado <- CalcularPromedio(a, b, c)
+	MostrarResultado(resultado)	
 FinAlgoritmo
