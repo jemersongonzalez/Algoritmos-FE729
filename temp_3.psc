@@ -25,9 +25,10 @@ Funcion ResultadoSuma <- Suma(n1, n2, n3, n4, n5)
 	ResultadoSuma <- n1 + n2 + n3 + n4 + n5
 FinFuncion
 
-//calculadora
+//Varcalculadora
 Algoritmo Calculadora
 	Definir opcionMenu Como Entero
+	Definir num1, num2, num3, num4, num5 Como Real
 	MostrarMenu
 	Escribir "Seleccione una de las cuatro opciones"
 	Leer opcionMenu
@@ -35,6 +36,10 @@ Algoritmo Calculadora
 	Segun opcionMenu Hacer
 		1: 
 			Escribir "Esta es la opción Suma"
+			Escribir "Ingrese cinco números enteros"
+			Leer num1, num2, num3, num4, num5
+			resultado <- suma (num1, num2, num3, num4, num5)
+			MostrarResultado(resultado)
 		2:
 			Escribir "Esta es la opción Resta"
 		3:
